@@ -18,7 +18,7 @@
                 </div>
                 <div class="searchBar">
                     <!-- <form action="" @submit.prevent=""> -->
-                        <input v-model="newTask" type="search" id="cerca" placeholder="Inserisci la task da compiere">
+                        <input v-model="newTask" @keyup.enter="addTask()" type="search" id="cerca" placeholder="Inserisci la task da compiere">
                         <button id="bottoneAdd" @click="addTask()">Aggiungi</button>
                     <!-- </form> -->
                 </div>
@@ -27,7 +27,7 @@
 
                     <div class="tabellaTodo">
 
-                        <div class="rowTabella" :class="{taskDone: lista[index].done}" v-for="(text, index) in lista ">
+                        <div class="rowTabella" v-if="lista.length > 0" :class="{taskDone: lista[index].done}" v-for="(text, index) in lista ">
 
                             <div class="testoTask" @click="checkDoneOrNot(index)">
                                 {{lista[index].text}}
@@ -37,6 +37,10 @@
                             </div>
                             
                         </div>
+
+                        <h2 v-else>
+                            Hai fatto tutto! 
+                        </h2>
                         
                     </div>
 
