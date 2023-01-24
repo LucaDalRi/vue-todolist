@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+img{
+    height: 70px;
+}
+
+.containerImg{
+    text-align: center;
+}
+
+.searchBar{
+    text-align: center;
+}
+
+#cerca{
+    margin-right: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#bottoneAdd{
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.containerTodo{
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 20px;
+    background-color: rgba(211, 211, 211, 0.171);
+    padding: 20px;
+}
+
+
+.rowTabella{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.testoTask{
+    width: 95%;
+}
+
+.deleteTask{
+    width: 5%;
+    text-align: end;
+}
