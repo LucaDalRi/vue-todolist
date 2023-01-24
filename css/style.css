@@ -16,6 +16,7 @@ img{
 
 .containerImg{
     text-align: center;
+    margin: 10px 0px;
 }
 
 .searchBar{
@@ -49,6 +50,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    border-bottom: 1px solid black;
 }
 .testoTask{
     width: 95%;
@@ -57,4 +59,8 @@ img{
 .deleteTask{
     width: 5%;
     text-align: end;
+}
+
+.taskDone{
+    text-decoration: line-through;
 }

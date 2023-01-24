@@ -3,18 +3,21 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-        done : false,
         lista: [
-            'Fare la spesa',
-            'Portare il cane fuori',
-            'Pulire la cantina'
+            {text: 'Fare la spesa', 
+            done: true
+        },
+            {text: 'Portare il cane fuori', 
+            done: false
+        },
+            {text: 'Pulire la cantina', 
+            done: false
+        }
         ]
     }
     
   },
   methods: {
-
-
 
 
   }

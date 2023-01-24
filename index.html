@@ -27,10 +27,10 @@
 
                     <div class="tabellaTodo">
 
-                        <div class="rowTabella">
+                        <div class="rowTabella" :class="{ taskDone: lista[index].done }" v-for="(text, index) in lista ">
 
                             <div class="testoTask">
-                                testo
+                                {{lista[index].text}}
                             </div>
                             <div class="deleteTask">
                                 <i class="fa-solid fa-xmark"></i>
