@@ -45,13 +45,13 @@ img{
     padding: 20px;
 }
 
-
 .rowTabella{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
     border-bottom: 1px solid black;
 }
+
 .testoTask{
     width: 95%;
 }

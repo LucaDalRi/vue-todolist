@@ -29,6 +29,21 @@ createApp({
 
         this.lista.push({text: this.newTask , done: false});
         this.newTask = '';
+    },
+
+    checkDoneOrNot(index) {
+
+        if (this.lista[index].done == true) {
+
+            this.lista[index].done = false;
+
+        }
+        else {
+
+            this.lista[index].done = true;
+
+        }
+
     }
 
 }

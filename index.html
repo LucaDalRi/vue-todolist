@@ -29,7 +29,7 @@
 
                         <div class="rowTabella" :class="{taskDone: lista[index].done}" v-for="(text, index) in lista ">
 
-                            <div class="testoTask">
+                            <div class="testoTask" @click="checkDoneOrNot(index)">
                                 {{lista[index].text}}
                             </div>
                             <div class="deleteTask" @click="removeRow(index)">
