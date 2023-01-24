@@ -19,6 +19,11 @@ createApp({
   },
   methods: {
 
+    removeRow(index) {
+        // da riguardare come funziona
+        this.lista.splice(index , 1); 
+
+    }
 
   }
 }).mount('#app')
